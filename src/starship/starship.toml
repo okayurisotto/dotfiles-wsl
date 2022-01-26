@@ -1,0 +1,8 @@
+[cmd_duration]
+disabled = true
+
+[git_status]
+disabled = true
+
+[nodejs]
+disabled = true
