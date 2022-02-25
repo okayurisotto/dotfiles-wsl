@@ -11,7 +11,7 @@ zstyle ':completion:*' menu select
 
 alias clip='win32yank.exe'
 alias fzf="fzf --color='prompt:cyan,pointer:cyan,marker:cyan,gutter:-1'"
-alias grep='ripgrep'
+alias grep='rg'
 alias icat='mpv --pause'
 alias ls='exa'
 alias mpv='mpv.exe'

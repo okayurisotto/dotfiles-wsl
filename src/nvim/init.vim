@@ -11,14 +11,7 @@ call dein#add(s:dein_repo_dir)
 
 call dein#add('itchyny/lightline.vim')
 
-call dein#add('tomtom/tcomment_vim')
-
 call dein#add('vim-denops/denops.vim')
-
-call dein#add('Shougo/ddc.vim')
-call dein#add('Shougo/ddc-around')
-call dein#add('Shougo/ddc-matcher_head')
-call dein#add('Shougo/ddc-sorter_rank')
 
 call dein#add('vim-skk/skkeleton.vim')
 
