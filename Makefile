@@ -12,9 +12,7 @@ set:
 	
 	ln -fsv "${PWD}/src/starship/starship.toml" "${XDG_CONFIG_HOME}/starship.toml"
 	
-	ln -fsv "${PWD}/src/zsh/.profile"    "${HOME}/.profile"
-	ln -fsv "${PWD}/src/zsh/.zprofile"   "${HOME}/.zprofile"
-	ln -fsv "${PWD}/src/zsh/.zshrc"      "${HOME}/.zshrc"
+	ln -fsv "${PWD}/src/zsh/.zshrc" "${HOME}/.zshrc"
 
 .PHONY: unset
 unset:
@@ -26,6 +24,4 @@ unset:
 	
 	rm -fv "${XDG_CONFIG_HOME}/starship.toml"
 	
-	rm -fv "${HOME}/.profile"
-	rm -fv "${HOME}/.zprofile"
 	rm -fv "${HOME}/.zshrc"
