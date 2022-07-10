@@ -5,4 +5,4 @@ disabled = true
 disabled = true
 
 [nodejs]
-disabled = true
+detect_extensions = []
