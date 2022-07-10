@@ -4,7 +4,6 @@
 
 [core]
 	autocrlf = false
-	editor = $EDITOR
 	quotePath = false
 [init]
 	defaultBranch = main
