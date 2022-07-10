@@ -4,6 +4,7 @@ XDG_CONFIG_HOME ?= "${HOME}/.config"
 set:
 	mkdir -p "${XDG_CONFIG_HOME}"
 	
+	ln -fsv "${PWD}/src/fzf"    "${XDG_CONFIG_HOME}"
 	ln -fsv "${PWD}/src/git"    "${XDG_CONFIG_HOME}"
 	ln -fsv "${PWD}/src/nvim"   "${XDG_CONFIG_HOME}"
 	ln -fsv "${PWD}/src/yt-dlp" "${XDG_CONFIG_HOME}"
@@ -17,6 +18,7 @@ set:
 
 .PHONY: unset
 unset:
+	rm -fv "${XDG_CONFIG_HOME}/fzf"
 	rm -fv "${XDG_CONFIG_HOME}/git"
 	rm -fv "${XDG_CONFIG_HOME}/nvim"
 	rm -fv "${XDG_CONFIG_HOME}/yt-dlp"

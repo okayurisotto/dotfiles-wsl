@@ -13,6 +13,8 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="$HOME/.nodebrew/current/bin:$PATH"
+export FZF_DEFAULT_COMMAND="$(which fd) --no-follow"
+export FZF_DEFAULT_OPTS="$(cat $XDG_CONFIG_HOME/fzf/config)"
 
 autoload -U compinit && compinit
 bindkey -e
@@ -20,7 +22,6 @@ eval "$(starship init zsh)"
 zstyle ':completion:*' menu select
 
 alias clip='win32yank.exe'
-alias fzf="fzf --color='prompt:cyan,pointer:cyan,marker:cyan,gutter:-1'"
 alias grep='rg'
 alias icat='mpv --pause'
 alias ls='exa'
