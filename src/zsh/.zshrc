@@ -11,7 +11,9 @@ export XDG_STATE_HOME="$HOME/.local/state"
 
 # for applications    ><> ><> ><> ><> ><> ><> ><> ><> ><> ><> ><>
 
+export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
 export EDITOR="$(which nvim)"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export PNPM_HOME="$XDG_DATA_HOME/pnpm"
 
 export FZF_DEFAULT_COMMAND="$(which fd) --no-follow"
@@ -34,7 +36,7 @@ prepend_path "$PNPM_HOME"
 
 # Zsh settings    ><> ><> ><> ><> ><> ><> ><> ><> ><> ><> ><> ><>
 
-autoload -U compinit && compinit
+autoload -U compinit && compinit -d "$XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION"
 zstyle ':completion:*' menu select
 
 bindkey -e
